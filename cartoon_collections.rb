@@ -19,7 +19,7 @@ def long_planeteer_calls(calls)
   # end
   # false 
   
-  if (calls.find { | word | word > 4 }) != nil 
+  if (calls.find { | word | word.size > 4 }) != nil 
     true
   else 
     false
