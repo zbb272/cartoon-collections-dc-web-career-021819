@@ -21,12 +21,12 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  # cheese_types.each do | cheese |
-  #   if array.include?(cheese)
-  #     return cheese 
-  #   end
-  # end
-  # nil 
+  cheese_types.each do | cheese |
+    if array.include?(cheese)
+      return cheese 
+    end
+  end
+  nil 
   
-  (array & cheese_types).first 
+  #(array & cheese_types).first 
 end
