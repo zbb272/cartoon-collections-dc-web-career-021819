@@ -28,4 +28,5 @@ def find_the_cheese(array)
   # array.find do | item |
   #   cheese_types.each {|cheese| item == cheese}
   # end
+  array & cheese_types
 end
