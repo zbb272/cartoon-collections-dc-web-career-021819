@@ -12,16 +12,26 @@ def summon_captain_planet(words)
 end
 
 def long_planeteer_calls(calls)
-  calls.collect do | word | 
-    if word.size > 4
-      return true 
-    end 
+  # calls.collect do | word | 
+  #   if word.size > 4
+  #     return true 
+  #   end 
+  # end
+  # false 
+  
+  if (calls.find { | word | word > 4 }) != nil 
+    true
+  else 
+    false
   end
-  false 
+  
 end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese_types.each do | cheese |
+    array.find {|x| x == cheese}
+  end
 end
 
 describe "#find_the_cheese" do
