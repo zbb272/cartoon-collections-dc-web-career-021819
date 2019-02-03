@@ -28,5 +28,5 @@ def find_the_cheese(array)
   end
   nil 
   
-  (array & cheese_types).find {|cheese
+  (array & cheese_types).first 
 end
